@@ -1,4 +1,5 @@
 # ML Crawler
+
 ### Crawler desenvolvido para teste na Mundiale
 
 ## Instalação das dependências
@@ -43,12 +44,12 @@ yarn start
 
 ## Utilização da API
 
-Para utilizar a api basta fazer uma requisição **POST** para a rota **/products** com o seguinte corpo:
+Para utilizar a api basta fazer uma requisição **POST** para a rota **/products** como no exemplo abaixo:
 
 ```json
 {
-  "search": "cadeado", //string de pesquisa
-  "limit": 2 //numero de resultados
+	"search": "cadeado",
+	"limit": 2
 }
 ```
 
@@ -56,22 +57,30 @@ Exemplo de resposta:
 
 ```json
 {
-  "length": 2,
-  "data": [
-    {
-      "name": "Cadeado Em Latão De 20 Mm Pado",
-      "link": "https://produto.mercadolivre.com.br/MLB-1165417082-cadeado-em-lato-de-20-mm-pado-_JM#position=1&type=item&tracking_id=74b837a8-a9b9-40a9-8dbb-0e0526f74c00",
-      "price": 11,
-      "store": "Dutra Maquinas",
-      "state": null
-    },
-    {
-      "name": "Cadeado Mesmo Segredo 25mm Zamac Stam",
-      "link": "https://produto.mercadolivre.com.br/MLB-1051471391-cadeado-mesmo-segredo-25mm-zamac-stam-_JM?searchVariation=32155276831#searchVariation=32155276831&position=2&type=item&tracking_id=74b837a8-a9b9-40a9-8dbb-0e0526f74c00",
-      "price": 22.8,
-      "store": "O Construtor",
-      "state": null
-    }
-  ]
+	"length": 2,
+	"data": [
+		{
+			"name": "Cadeado Em Latão De 20 Mm Pado",
+			"link": "https://produto.mercadolivre.com.br/MLB-1165417082-cadeado-em-lato-de-20-mm-pado-_JM#position=1&type=item&tracking_id=74b837a8-a9b9-40a9-8dbb-0e0526f74c00",
+			"price": 11,
+			"store": "Dutra Maquinas",
+			"state": null
+		},
+		{
+			"name": "Cadeado Mesmo Segredo 25mm Zamac Stam",
+			"link": "https://produto.mercadolivre.com.br/MLB-1051471391-cadeado-mesmo-segredo-25mm-zamac-stam-_JM?searchVariation=32155276831#searchVariation=32155276831&position=2&type=item&tracking_id=74b837a8-a9b9-40a9-8dbb-0e0526f74c00",
+			"price": 22.8,
+			"store": "O Construtor",
+			"state": null
+		}
+	]
 }
 ```
+
+# Autor
+
+### [Frederico Sousa](http://github.com/fredericosousa)
+
+# Licença
+
+### [MIT](https://choosealicense.com/licenses/mit/)
